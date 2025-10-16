@@ -18,14 +18,9 @@ namespace Hemuppgift_Arv_Temp.Game
 
         public void takePins(int pins)
         {
-            if (pins == 1 || pins == 2)
+            if (pins <= noPins && pins > 0)
             {
                 noPins -= pins;
-                Console.WriteLine($"Spelaren har tagit {pins} pinnar. Det är {noPins} pinnar kvar");
-            }
-            else
-            {
-                Console.WriteLine("Spelaren måste välja en eller två pinnar");
             }
         }
 
